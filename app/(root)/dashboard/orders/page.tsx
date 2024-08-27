@@ -5,9 +5,8 @@ import { DataTable } from "../../../components/order-table/components/data-table
 import { orders } from "../../../components/order-table/data/orders";
 import { columns } from "../../../components/order-table/components/columns";
 import { HeadPage } from "../../../../components/ui/HeadPage";
-import { Button } from "../../../../components/ui/button";
-import { FiRefreshCw } from "react-icons/fi";
 import { Separator } from "../../../../components/ui/separator";
+import DownloadOrders from "../../../components/order-table/DownloadOrders";
 
 type Props = {};
 
@@ -29,9 +28,7 @@ const Page = (props: Props) => {
             title={`Orders (${orders.length})`}
             description="Mange orders from here"
           />
-          <Button>
-            <FiRefreshCw size={20} className="mr-2" /> Refresh
-          </Button>
+          <DownloadOrders />
         </div>
         <Separator />
 
